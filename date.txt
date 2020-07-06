@@ -23,6 +23,7 @@ public class date_project {
 				System.out.println("");
 	
 		}
+		System.out.println("One Two Three Four Five Six Seven");
 	}
 
 }
