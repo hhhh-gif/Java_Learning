@@ -1,0 +1,16 @@
+package test1;
+import java.util.*;
+
+public class test {
+	//判断某年份是否为闰年
+	public static void main(String[] arg) {
+		Scanner in = new Scanner(System.in);
+		int year = in.nextInt();
+		if(year%4 == 0&&year%100 != 0)
+			System.out.println("闰年");
+		else 
+			System.out.println("平年");
+	}
+	
+
+}
