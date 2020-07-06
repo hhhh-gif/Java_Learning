@@ -1,0 +1,28 @@
+package date_project;
+
+import java.time.*;
+
+public class date_project {
+
+	public static void main(String[] arg) {
+		LocalDate date = LocalDate.now();
+		int year = date.getYear();
+		int month = date.getMonthValue();
+		int day = date.getDayOfMonth();
+		date = date.minusDays(day-1);//set the start day of the month
+		DayOfWeek week = date.getDayOfWeek();
+		int weekvalue = week.getValue();
+		System.out.println("One Two Three Four Five Six Seven");
+		while(date.getMonthValue()==month) {
+			if(day == date.getDayOfMonth()) 
+				System.out.println("*");
+			else
+				System.out.println("");
+			date = date.plusDays(1);
+			if(date.getDayOfWeek().getValue()==1)
+				System.out.println("");
+	
+		}
+	}
+
+}
