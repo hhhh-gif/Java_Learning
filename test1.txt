@@ -14,3 +14,29 @@ public class test {
 	
 
 }
+//
+
+package test1;
+import java.util.*;
+
+public class test {
+	//判断某年份是否为闰年
+	public static void main(String[] arg) {
+//		Scanner in = new Scanner(System.in);
+//		int year = in.nextInt();
+//		if(year%4 == 0&&year%100 != 0)
+//			System.out.println("闰年");
+//		else 
+//			System.out.println("平年");
+	//求1！+2！+。。。+10！
+		int sum = 0,i=10;
+		while(i>=0)
+		{
+			sum += i*i;
+			--i;
+		}
+		System.out.println(sum);
+		
+	}
+	
+}
