@@ -1,4 +1,5 @@
-﻿----7.6
+﻿How2j:java学习网站
+----7.6
 一、类和对象
 1、类之间的关系
 	依赖
@@ -98,4 +99,36 @@ main（）方法，并入栈，方法区中的变量可共享，存在于整个�
 2、lambda表达式
 	（）->{};
 	接口调用
+
+----7.9集合和映射
+1、集合
+	第一层（接口）：Collection
+	第二层（接口，继承）：List，Set，Queue
+	第三层（类，实现）：ArrayList，LinkedList，HashSet，TreeSet，LinkedHashSet，PriorityQueue
+2、映射
+	存放键值对
+	散列映射对键进行散列，树映射根据键的顺序将元素组织为一个搜索树
+	HashMap，TreeMap
+3、迭代器
+	先固定好集合（add，remove）后，再操作迭代器（add，remove）
+	定义好迭代器后，集合对象本身不能操作了
+	Iterator不支持add和remove
+	ListIterator支持add和remove
+	先next（），后remove（）
+
+----补充
+1、Java产生随机数的方法
+	Random类：如，random.nextInt(1000);就会产生一个1000以内（不含1000）的随机整数
+	Math.random():产生一个[0,1)的随机数
+2、时间
+	Date date = new date（）；
+	格式化：
+	日期转字符串：
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String str = format.format(date);
+	字符串转日期：
+		SimpleDateFormat format1 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		String str1 = "2020/7/10 8:55:55";
+		Date date1 = format1.parse(str1);
+3、
 	

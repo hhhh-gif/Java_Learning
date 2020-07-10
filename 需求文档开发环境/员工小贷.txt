@@ -1,0 +1,18 @@
+操作系统：CentOS Linux release 7.2.1511
+应用软件：
+MySQL 5.5.60-MariaDB
+MariaDB Server
+Nginx 1.14.2 x64
+Tomcat 8.0.36 x64
+Java Version 8 x64
+
+Web接口的可靠性：
+	Nginx服务：通过keepalived实现双活，实例失效时自动切换
+	Tomcat服务：多个tomcat实例负载均衡，服务可横向扩展
+数据库的可靠性：
+	Mysql数据库日备份
+文件可靠性：
+	批量处理时把处理完成的记录写入.ok文件
+缓存服务可靠性：
+	通过redis cluster实现master-slave机制，保证服务高可用
+
